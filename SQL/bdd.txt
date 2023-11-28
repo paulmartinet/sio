@@ -1,0 +1,13 @@
+Ajouter une table :
+
+CREATE TABLE EleveBis (
+idEleve INT NOT NULL,
+nom VARCHAR (30), 
+prenom VARCHAR (30), 
+login VARCHAR (30) UNIQUE, 
+mdp VARCHAR (20) NOT NULL, 
+dateNaiss DATE, 
+CP CHAR (5),
+Ville VARCHAR (30),
+CONSTRAINT PK_EleveBis PRIMARY KEY (idEleve)
+);
