@@ -1,0 +1,342 @@
+/* nav bar */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    position: fixed; /* Fixe la barre en haut de la page */
+    top: 0; /* Collé en haut */
+    left: 0; /* Collé à gauche */
+    right: 0; /* Collé à droite */
+  }
+  
+/* Style de la nav bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+/* changer la couleur de la nav bar */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+/* ajouter une couleur pour les liens */
+.topnav a.active {
+    background-color: #007bff;
+    color: white;
+  }
+
+/* Les grands titres */
+h1{
+    color: black;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+/* h1 font-size: 24px;
+  margin-bottom: 20px; */
+
+/* Les moyens titres */
+h2{
+    color: black;
+    font-family: cursive;
+}
+
+/* Les paragraphes */
+p{
+    color: rgb(0, 4, 255);
+    font-size: 125%;
+    font-family: cursive;
+}
+
+/*mdn background couleur : linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%)*/
+
+/*background:linear-gradient(217deg, rgb(89 0 255 / 80%), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, #149ddd, rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);*/
+/* couleur du background blanc-noir-bleu : linear-gradient(217deg, rgb(0 0 0 / 80%), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, #ffffff, rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgb(6 6 255 / 80%), rgba(0,0,255,0) 70.71%)*/
+/* couleur du background bleu-blanc-rouge :linear-gradient(217deg, rgb(255 0 0 / 80%), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, #0058ff, rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgb(6 6 255 / 80%), rgba(0,0,255,0) 70.71%)*/
+/* couleur du background noir-blanc-bleu : linear-gradient(217deg, rgb(0 0 0 / 80%), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, #86d9ff, rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgb(6 6 255 / 80%), rgba(0,0,255,0) 70.71%)*/
+/*couleur du background bleu-violet : linear-gradient(217deg, rgb(89 0 255 / 80%), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, #149ddd, rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%) */
+body{
+    background-color: gray;
+}
+
+/* Compétences 
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 0;
+  height: 100%;
+  transition: width 1s ease-in-out;
+  background-color: #149ddd;
+}*/
+
+/* Styles pour la section Compétences */
+#skills {
+  text-align: left;
+  padding: 80px 0;
+}
+
+.skill-box {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Style pour les barres de compétences */
+.skill .progress {
+  height: 20px;
+  background: transparent;
+}
+
+.skill .progress-bar {
+  background: #007bff;
+  width: 0;
+  transition: width 1s ease;
+  text-align: right;
+  color: #fff;
+  padding: 2px 10px;
+}
+
+.skill h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* PDF du CV et de la lettre de motivation */
+.pdf-container {
+  margin-top: 60px; /* Assurez-vous que le contenu PDF n'entre pas en collision avec la topnav */
+  margin-bottom: 60px; /* Assurez-vous que le contenu PDF n'entre pas en collision avec le footer */
+  padding: 20px; /* Espace autour du contenu PDF */
+  width: 600px;
+  height: 865px;
+  max-width: 100%; /* La largeur maximale est de 100% de la largeur de l'écran */
+  box-sizing: border-box; /* Empêche les marges de déborder */
+}
+
+/* Style du contenu de la page */
+.content {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Style du formulaire de contact */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%; /* Les champs de formulaire occupent 100% de la largeur de leur conteneur */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100%; /* La largeur maximale est de 100% de la largeur du formulaire */
+  box-sizing: border-box; /* Empêche les marges de déborder */
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+/* Styles pour la section "Mes Projets" */
+.projets {
+  background-color: #5c5b5b;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.projets-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.projet {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.projet h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.projet p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.projet a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.projet a:hover {
+  background-color: #0056b3;
+}
+
+/* Footer des pages */
+footer {
+  background-color: #000000;
+  color: #ffff;
+  text-align: center; /* Centre le texte horizontalement */
+  padding: 15px 0; /* Espace autour du texte (haut et bas) */
+  position:fixed; /* Fixe le pied de page en bas de la page */
+  bottom: 0; /* Collé en bas */
+  left: 0; /* Collé à gauche */
+  right: 0; /* Collé à droite */
+  }
+
+
+/*Login pour accèder à la page privée*/
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px; /* Largeur maximale de la boîte de connexion */
+  width: 100%; /* 100% de la largeur disponible */
+  margin: 0 20px; /* Marge sur les côtés lorsque la largeur est supérieure à 400px */
+}
+
+/* Centrer la boîte horizontalement pour les grands écrans */
+@media screen and (min-width: 768px) {
+  .login-container {
+      margin: 0 auto;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="password"], input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Page Privée*/
+p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.code-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: rgb(125, 163, 219);
+  border-radius: 5px;
+  font-family: monospace;
+  margin: 20px;
+}
+
+.copy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+img{
+  width: 450px;
+}

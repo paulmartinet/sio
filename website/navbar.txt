@@ -1,0 +1,56 @@
+top nav 
+
+/* nav bar */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    position: fixed; /* Fixe la barre en haut de la page */
+    top: 0; /* Collé en haut */
+    left: 0; /* Collé à gauche */
+    right: 0; /* Collé à droite */
+  }
+  
+/* Style de la nav bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+/* changer la couleur de la nav bar */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+/* ajouter une couleur pour les liens */
+.topnav a.active {
+    background-color: #007bff;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+footer :
+
+
+
+/* Footer des pages */
+footer {
+  background-color: #000000;
+  color: #ffff;
+  text-align: center; /* Centre le texte horizontalement */
+  padding: 15px 0; /* Espace autour du texte (haut et bas) */
+  position:fixed; /* Fixe le pied de page en bas de la page */
+  bottom: 0; /* Collé en bas */
+  left: 0; /* Collé à gauche */
+  right: 0; /* Collé à droite */
+  }
