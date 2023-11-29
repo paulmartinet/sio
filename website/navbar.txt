@@ -1,5 +1,3 @@
-top nav 
-
 /* nav bar */
 .topnav {
     background-color: black;
@@ -32,16 +30,7 @@ top nav
     color: white;
   }
 
-
-
-
-
-
-
-
-footer :
-
-
+------------------------------------------------------------
 
 /* Footer des pages */
 footer {
