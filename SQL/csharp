@@ -1,0 +1,46 @@
+using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
+using System;
+
+namespace AutoEcole34
+{
+    public static class GestionBDD
+    {
+        #region "Champs statiques"
+
+        public static SqlConnection maConnexion = new SqlConnection();
+        public static SqlCommand maCommandeRequete = new SqlCommand();
+        public static SqlDataAdapter monRemplisseur = new SqlDataAdapter();
+        public static DataSet monJeuDeDonnees = new DataSet();
+
+        public static string maRequete = "";
+        public static string maChaine = "";
+
+        #endregion
+
+        #region "Connexion à la base de données"
+
+        public static void seConnecter(string bdd)
+        {
+            if (maConnexion.State == ConnectionState.Closed)
+            {
+                try
+                {
+                    maConnexion.ConnectionString = maChaine;
+                    maConnexion.Open();
+                    monJeuDeDonnees = new DataSet();
+                    monJeuDeDonnees.Clear();
+                    maCommandeRequete.CommandType = CommandType.Text;
+                    maCommandeRequete.Connection = maConnexion;
+                    MessageBox.Show("Connexion réussie à la base de données " + bdd + " !");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erreur connexion : " + ex.Message);
+                }
+            }
+        }
+        #endregion
+    }
+}
